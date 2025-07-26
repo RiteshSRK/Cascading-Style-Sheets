@@ -156,3 +156,69 @@ body {
   /* ... */
 }
 ```
+
+---
+
+# ✅ min-width & max-width
+> These control how small or large an element can shrink or grow.
+
+| **Property** | **Purpose**                         | **Example**         |
+| ------------ | ----------------------------------- | ------------------- |
+| `min-width`  | Sets the **smallest width** allowed | `min-width: 300px;` |
+| `max-width`  | Sets the **largest width** allowed  | `max-width: 100%;`  |
+
+### 🧠 Use Case Example:
+```bash
+.container {
+  width: 80%;
+  min-width: 320px;
+  max-width: 1200px;
+}
+```
+### This means the container:
+
+- Shrinks only to 320px minimum
+
+- Grows up to 1200px maximum
+---
+# ✅ clamp() - Fluid Responsive Sizing
+> Combines min(), max(), and relative units for responsive sizing without media queries:
+
+| **Part**    | **Meaning**                         |
+| ----------- | ----------------------------------- |
+| `min`       | Minimum allowed value               |
+| `preferred` | Preferred/ideal value (often fluid) |
+| `max`       | Maximum allowed value               |
+
+```bash
+.element {
+  /* clamp(min, preferred, max) */
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  width: clamp(300px, 50%, 800px);
+}
+```
+---
+# ✅ calc() – Calculation in CSS
+> Allows you to dynamically calculate values with math.
+
+```bash
+.element {
+  width: calc(100% - 60px); /* Full width minus 60px */
+  height: calc(100vh - 120px); /* Viewport height minus header/footer */
+  font-size: calc(1rem + 0.5vw); /* Responsive base size */
+}
+```
+### You can use:
+
+- `+`, `-`, `*`, `/`
+
+- Mix units: `%`, `px`, `em`, `vh`, etc.
+---
+## 🎯 Summary Table
+
+| **Function / Property** | **Purpose**                       | **Example**                         |
+| ----------------------- | --------------------------------- | ----------------------------------- |
+| `min-width`             | Sets minimum width                | `min-width: 400px;`                 |
+| `max-width`             | Sets maximum width                | `max-width: 1200px;`                |
+| `clamp()`               | Scales between min and max values | `font-size: clamp(14px, 2vw, 18px)` |
+| `calc()`                | Math for dynamic sizing           | `width: calc(100% - 2rem)`          |
