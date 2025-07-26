@@ -87,3 +87,72 @@ nav {
 
 # 🔹 What is CSS Grid?
 > Grid is a powerful 2D layout system and that create complex designs with rows and columns.
+
+
+---
+
+# ✅ What Are Media Queries?
+> **Media queries** allow you to apply different styles for different screen sizes or device types.
+
+## Syntax
+```bash
+@media (condition) {
+  /* CSS rules for that condition */
+}
+```
+
+## 🔸 Common Media Query Syntax
+| **Breakpoint** | **Use Case**                   | **Example**                       |
+| -------------- | ------------------------------ | --------------------------------- |
+| `max-width`    | Apply styles **below** a width | `@media (max-width: 768px)`       |
+| `min-width`    | Apply styles **above** a width | `@media (min-width: 1024px)`      |
+| `min-height`   | Based on screen height         | `@media (min-height: 600px)`      |
+| `orientation`  | Landscape or portrait          | `@media (orientation: landscape)` |
+
+## 📱 Breakpoint Examples
+| **Device Type** | **Width Range**  | **Media Query**                                     |
+| --------------- | ---------------- | --------------------------------------------------- |
+| Mobile          | 0 – 480px        | `@media (max-width: 480px)`                         |
+| Tablets         | 481px – 768px    | `@media (min-width: 481px) and (max-width: 768px)`  |
+| Laptops         | 769px – 1024px   | `@media (min-width: 769px) and (max-width: 1024px)` |
+| Desktops        | 1025px and above | `@media (min-width: 1025px)`                        |
+
+### 🧪 Example
+```bash
+/* Base style */
+body {
+  font-size: 16px;
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+}
+```
+# Advanced Techniques
+## 🎯 Pro Tip
+### You can combine queries:
+```bash
+@media (min-width: 600px) and (max-width: 900px) {
+  .container {
+    padding: 20px;
+  }
+}
+```
+---
+## Combined Conditions
+```bash
+/* Applies only to tablets in landscape */
+@media (min-width: 768px) and (orientation: landscape) {
+  /* ... */
+}
+```
