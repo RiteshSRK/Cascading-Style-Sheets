@@ -222,3 +222,44 @@ body {
 | `max-width`             | Sets maximum width                | `max-width: 1200px;`                |
 | `clamp()`               | Scales between min and max values | `font-size: clamp(14px, 2vw, 18px)` |
 | `calc()`                | Math for dynamic sizing           | `width: calc(100% - 2rem)`          |
+
+---
+# 📱 What is Responsive Design?
+> **Responsive Design** means designing web pages that **adapt to any screen size**, whether it’s a mobile, tablet, laptop, or large desktop.
+
+## 🔄 Mobile-first vs Desktop-first
+| **Approach**      | **Definition**                                                                 | **Media Query Type** | **Pros**                                                             | **Example**                 |
+| ----------------- | ------------------------------------------------------------------------------ | -------------------- | -------------------------------------------------------------------- | --------------------------- |
+| **Mobile-first**  | Design starts for **small screens first**, then add styles for larger screens. | `min-width`          | ✅ Faster on mobile<br>✅ Modern standard<br>✅ Prioritizes performance | `@media (min-width: 768px)` |
+| **Desktop-first** | Design starts for **large screens first**, then adjust for smaller ones.       | `max-width`          | ✅ Easier if targeting desktop users mostly                           | `@media (max-width: 768px)` |
+
+## 🔧 Example Comparison
+### 🔹 Mobile-first CSS (Recommended)
+```bash
+/* Default: small screens */
+body {
+  font-size: 14px;
+}
+
+/* Bigger screens */
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+```
+### 🔹 Desktop-first CSS
+```bash
+/* Default: large screens */
+body {
+  font-size: 16px;
+}
+
+/* Smaller screens */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+```
+---
