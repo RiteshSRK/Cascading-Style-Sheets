@@ -3,7 +3,7 @@
 > And flexbox is one-dimensional layout method.
 
 ## 1. Start Flexbox
-```bash
+```css
 .container {
   display: flex; /* Turns on Flexbox */
 }
@@ -17,7 +17,7 @@
 | `column`         | Top-to-bottom           |
 | `column-reverse` | Bottom-to-top           |
 
-```bash
+```css
 .container {
   flex-direction: column; /* Stacks items vertically */
 }
@@ -48,7 +48,7 @@
 
 ### D) gap (Spacing Between Items)
 > Adds gaps **between** flex items (no margins needed!).
-```bash
+```css
 .container {
   gap: 20px; /* Space between all items */
 }
@@ -56,7 +56,7 @@
 
 ## 3. Practical Examples
 ### Navigation Bar
-```bash
+```css
 nav {
   display: flex;
   justify-content: space-between;
@@ -65,7 +65,7 @@ nav {
 }
 ```
 ### Centered Card
-```bash
+```css
 .card {
   display: flex;
   flex-direction: column;
@@ -95,7 +95,7 @@ nav {
 > **Media queries** allow you to apply different styles for different screen sizes or device types.
 
 ## Syntax
-```bash
+```css
 @media (condition) {
   /* CSS rules for that condition */
 }
@@ -118,7 +118,7 @@ nav {
 | Desktops        | 1025px and above | `@media (min-width: 1025px)`                        |
 
 ### 🧪 Example
-```bash
+```css
 /* Base style */
 body {
   font-size: 16px;
@@ -141,7 +141,7 @@ body {
 # Advanced Techniques
 ## 🎯 Pro Tip
 ### You can combine queries:
-```bash
+```css
 @media (min-width: 600px) and (max-width: 900px) {
   .container {
     padding: 20px;
@@ -150,7 +150,7 @@ body {
 ```
 ---
 ## Combined Conditions
-```bash
+```css
 /* Applies only to tablets in landscape */
 @media (min-width: 768px) and (orientation: landscape) {
   /* ... */
@@ -168,7 +168,7 @@ body {
 | `max-width`  | Sets the **largest width** allowed  | `max-width: 100%;`  |
 
 ### 🧠 Use Case Example:
-```bash
+```css
 .container {
   width: 80%;
   min-width: 320px;
@@ -190,7 +190,7 @@ body {
 | `preferred` | Preferred/ideal value (often fluid) |
 | `max`       | Maximum allowed value               |
 
-```bash
+```css
 .element {
   /* clamp(min, preferred, max) */
   font-size: clamp(1rem, 2.5vw, 2rem);
@@ -201,7 +201,7 @@ body {
 # ✅ calc() – Calculation in CSS
 > Allows you to dynamically calculate values with math.
 
-```bash
+```css
 .element {
   width: calc(100% - 60px); /* Full width minus 60px */
   height: calc(100vh - 120px); /* Viewport height minus header/footer */
@@ -235,7 +235,7 @@ body {
 
 ## 🔧 Example Comparison
 ### 🔹 Mobile-first CSS (Recommended)
-```bash
+```css
 /* Default: small screens */
 body {
   font-size: 14px;
@@ -249,7 +249,7 @@ body {
 }
 ```
 ### 🔹 Desktop-first CSS
-```bash
+```css
 /* Default: large screens */
 body {
   font-size: 16px;
