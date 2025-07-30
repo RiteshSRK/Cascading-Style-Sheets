@@ -35,7 +35,7 @@
 ---
 
 ### ✅ Example:
-```bash
+```css
 .box {
   width: 200px;           /* content width */
   height: 100px;          /* content height */
@@ -63,7 +63,7 @@
 > Removes the element completely from the layout (as if it doesn’t exist).
 
 > Unlike visibility: hidden, it doesn’t take up space.
-```bash
+```html
 <p>This is a <span style="display: none;">hidden</span> word.</p>
 ```
 ⚠️ Element is not visible and doesn’t take up space.
@@ -72,7 +72,7 @@
 
 ## Bonus: Common Use Cases:
 ### 1. Horizontal Navigation Menu
-```bash
+```css
 nav li {
   display: inline-block; /* Makes list items horizontal */
   margin: 0 10px;
@@ -80,7 +80,7 @@ nav li {
 ```
 
 ### 2. Hide/Show Elements with JavaScript
-```bash
+```js
 document.getElementById("menu").style.display = "block"; // Show
 document.getElementById("menu").style.display = "none";  // Hide
 ```
@@ -102,7 +102,7 @@ document.getElementById("menu").style.display = "none";  // Hide
 - Only works on positioned elements (`relative`, `absolute`, `fixed`, `sticky`).
 
 ### Example:
-```bash
+```css
 .box1 {
   position: absolute;
   z-index: 10; /* Appears on top */
@@ -181,7 +181,7 @@ Relative to screen size:  <br>
 - Styles when you **mouse over** an element.  <br>
 - Great for buttons, links, and interactive elements.
 
-```bash
+```css
 button:hover {
   background: blue; /* Turns blue on hover */
   color: white;
@@ -192,7 +192,7 @@ button:hover {
 - Styles when an element is selected (like an input field).   <br>
 - Important for **keyboard** accessibility.
 
-```bash
+```css
 input:focus {
   border: 2px solid green; /* Highlights when clicked */
 }
@@ -209,7 +209,7 @@ input:focus {
 | `:nth-child(even)` | Selects **all even-numbered** children (2nd, 4th…) |
 | `:nth-child(3n)`   | Selects **every 3rd** child (3rd, 6th, 9th…)       |
 
-```bash
+```css
 tr:nth-child(odd) {
   background: lightgray; /* Zebra-striped table rows */
 }
@@ -228,7 +228,7 @@ tr:nth-child(odd) {
 > Pseudo-elements **insert virtual content** into the DOM — **without adding HTML elements**.
 
 ## `::before` → Inserts content before an element.
-```bash
+```css
 p::before {
   content: "👉 ";
   color: blue;
@@ -236,7 +236,7 @@ p::before {
 ```
 
 ## `::after` → Inserts content after an element.
-```bash
+```css
 p::after {
   content: " ✅";
   color: green;
@@ -249,14 +249,14 @@ p::after {
 
 ## 1. `opacity` - Element Transparency
 > Controls how transparent an element is.
-```bash
+```css
 div {
   opacity: 0.5; /* 50% transparent */
 }
 ```
 ## 2. visibility - Hide Without Removing Space
 > Controls the element is **visible or hidden, without removing its space.**
-```bash
+```css
 div {
   visibility: hidden; /* element is hidden but space remains */
 }
@@ -274,7 +274,7 @@ div {
 
 ## 3. overflow - Handle Extra Content
 > Controls content overflows its container.
-```bash
+```css
 .container {
   overflow: hidden; /* Cuts off extra content */
 }
@@ -298,7 +298,7 @@ div {
 
 ## 1. `cursor` - Control Mouse Pointer Appearance
 > Changes how the mouse cursor looks when hovering over an element.
-```bash
+```css
 button {
   cursor: pointer; /* Hand icon for clickable items */
 }
@@ -318,7 +318,7 @@ button {
 ---
 ## 2. text-align - Horizontal Text Alignment
 > Controls how text is aligned left-to-right in its container.
-```bash
+```css
 p {
   text-align: center; /* Centers text */
 }
@@ -340,7 +340,7 @@ p {
 
 ## 3. vertical-align - Vertical Alignment
 > Aligns inline/inline-block elements vertically (not for block elements!).
-```bash
+```css
 img {
   vertical-align: middle; /* Aligns with text */
 }
