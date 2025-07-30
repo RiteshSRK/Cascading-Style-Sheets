@@ -6,7 +6,7 @@
 
 ### 1. Inline CSS
 > Write CSS directly inside an HTML element using the style attribute.
-```css
+```html
 <p style="color: red; font-size: 20px;">This is a red paragraph.</p>
 ```
 
@@ -32,7 +32,7 @@
 
 ### 3. External CSS
 > Link a separate `.css` file to your HTML using the `<link>` tag.
-```bash
+```html
 <!-- index.html -->
 <!DOCTYPE html>
 <html>
