@@ -45,7 +45,7 @@
 </html>
 ```
 
-```js
+```css
 /* styles.css */
 p {
   color: green;
