@@ -6,7 +6,7 @@
 
 ### 1. Inline CSS
 > Write CSS directly inside an HTML element using the style attribute.
-```bash
+```js
 <p style="color: red; font-size: 20px;">This is a red paragraph.</p>
 ```
 
