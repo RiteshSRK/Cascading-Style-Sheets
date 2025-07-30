@@ -34,7 +34,6 @@ transition: opacity 300ms linear; /* 300 milliseconds */
 ### C. Timing Function
 - Controls the acceleration curve of the animation.
 
-```css
 | **Value**     | **Effect**                                  |
 |:-------------:|:-------------------------------------------:|
 | `ease`        | Starts slow, speeds up, ends slow (default) |
@@ -42,21 +41,20 @@ transition: opacity 300ms linear; /* 300 milliseconds */
 | `ease-in`     | Starts slow                                 |
 | `ease-out`    | Ends slow                                   |
 | `ease-in-out` | Slow at both start and end                  |
-```
 
-```js
+```css
 transition: transform 0.4s ease-in-out;
 ```
 
 ### D. Delay (Optional)
 - Waits before starting the transition
-```js
+```css
 transition: opacity 0.3s ease 0.2s; /* Waits 0.2s before fading */
 ```
 
 ## 3. Practical Examples
 ### Button Hover Effect
-```js
+```css
 .button {
   background: blue;
   transition: background 0.3s ease, transform 0.2s ease-out;
@@ -84,7 +82,7 @@ transition: opacity 0.3s ease 0.2s; /* Waits 0.2s before fading */
 - `border-radius`
 
 ## 6. Shorthand vs Longhand
-```js
+```css
 /* Shorthand */
 transition: all 0.3s ease-in-out 0.1s;
 
@@ -109,11 +107,11 @@ transition-delay: 0.1s;
 ## 1. scale() – Zoom In/Out
 > Changes the size of an element.
 ### Basic Syntax
-```js
+```css
 transform: scale(x, y); /* x = width, y = height */
 ```
 ### Examples
-```js
+```css
 /* Uniform scaling */
 .element {
   transform: scale(1.5); /* 150% of original size */
@@ -144,11 +142,11 @@ transform: scale(x, y); /* x = width, y = height */
 ## 2. rotate() – Rotate Element
 > Rotates an element around its center point.
 ### Basic Syntax
-```js
+```css
 transform: rotate(angle);
 ```
 ### Examples
-```js
+```css
 /* 45 degree rotation */
 .element {
   transform: rotate(45deg);
@@ -170,11 +168,11 @@ transform: rotate(angle);
 ## 3. translate() - Moving Elements
 > Repositions an element without affecting other elements.
 ### Basic Syntax
-```js
+```css
 transform: translate(x, y);
 ```
 ### Examples
-```js
+```css
 /* Move right 20px, down 10px */
 .element {
   transform: translate(20px, 10px);
@@ -206,7 +204,7 @@ transform: translate(x, y);
 ---
 ## Combining Transforms
 > You can combine multiple transforms in one declaration:
-```js
+```css
 .element {
   transform: scale(1.2) rotate(15deg) translate(10px, 5px);
 }
@@ -219,7 +217,7 @@ transform: translate(x, y);
 > CSS animations allow you to create smooth, step-by-step transitions of an element’s style using keyframes.
 ## 1. Creating Animations with @keyframes
 > @keyframes defines the animation sequence:
-```js
+```css
 @keyframes animation-name {
   0% { /* Starting style */ }
   50% { /* Middle style */ }
@@ -228,7 +226,7 @@ transform: translate(x, y);
 ```
 
 ## Example: Fade In
-```js
+```css
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -236,12 +234,12 @@ transform: translate(x, y);
 ```
 
 ## Basic Example: Slide Box
-```js
+```html
 //  HTML
 
 <div class="box"></div>
 ```
-```js
+```css
 //  CSS
 
 .box {
@@ -279,13 +277,13 @@ transform: translate(x, y);
 
 
 ### Shorthand Syntax
-```js
+```css
 .element {
   animation: name duration timing-function delay iteration-count direction fill-mode;
 }
 ```
 ### Example Usage
-```js
+```css
 .box {
   animation: fadeIn 1s ease-in-out 0.5s 1 normal forwards;
 }
