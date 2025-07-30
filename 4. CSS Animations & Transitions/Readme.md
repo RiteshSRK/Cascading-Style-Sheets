@@ -6,14 +6,14 @@
 > The transition property lets you smoothly animate changes in CSS properties
 
 ## 1. Transition Syntax
-```js
+```css
 transition: [property] [duration] [timing-function] [delay];
 ```
 ### A. Property
 - Specifies which CSS property to animate
 
 - Use `all` to transition all animatable properties
-```js
+```css
 /* Animate only width */
 transition: width 0.3s ease;
 
@@ -26,7 +26,7 @@ transition: all 0.3s ease;
 
 ### B. Duration
 - How long the transition takes (in seconds `s` or milliseconds `ms`)
-```js
+```css
 transition: width 0.5s ease; /* Half second */
 transition: opacity 300ms linear; /* 300 milliseconds */
 ```
@@ -34,7 +34,7 @@ transition: opacity 300ms linear; /* 300 milliseconds */
 ### C. Timing Function
 - Controls the acceleration curve of the animation.
 
-```js
+```css
 | **Value**     | **Effect**                                  |
 |:-------------:|:-------------------------------------------:|
 | `ease`        | Starts slow, speeds up, ends slow (default) |
