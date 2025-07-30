@@ -6,14 +6,14 @@
 
 ### 1. Inline CSS
 > Write CSS directly inside an HTML element using the style attribute.
-```js
+```css
 <p style="color: red; font-size: 20px;">This is a red paragraph.</p>
 ```
 
 ### 2. Internal CSS
 > Place CSS rules inside a `<style>` tag in the `<head>` of your HTML document.
 
-```bash
+```html
 <!DOCTYPE html>
 <html>
 <head>
