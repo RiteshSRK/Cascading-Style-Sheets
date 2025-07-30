@@ -57,7 +57,7 @@ p {
 > A selector in CSS is used to "select" the HTML element(s) you want to style.
 
 ### 🧱 Basic Syntax:
-```bash
+```css
 selector {
   property: value;
 }
@@ -67,7 +67,7 @@ selector {
 
 ### 1. Universal Selector (`*`)
 > Selects all elements on the page.
-```bash
+```css
 * {
   margin: 0;
   padding: 0;
@@ -76,7 +76,7 @@ selector {
 
 ### 2. Type or Tag Selector (e.g., `p`, `div`, `h1`)
 > Selects all elements of a specific HTML tag.
-```bash
+```css
 p {
   color: blue;
 }
@@ -84,10 +84,10 @@ p {
 
 ### 3. Class Selector (`.classname`)
 > Targets all elements with a specific class attribute.
-```bash
+```html
 <p class="info">This is a paragraph.</p>
 ```
-```bash
+```css
 .info {
   color: green;
 }
@@ -96,10 +96,10 @@ p {
 
 ### 4. ID Selector (`#idname`)
 > Targets a single element with a specific id.
-```bash
+```html
 <h1 id="main-title">Welcome</h1>
 ```
-```bash
+```css
 #main-title {
   color: red;
 }
@@ -108,7 +108,7 @@ p {
 
 ### 5. Group Selector (`selector1`, `selector2`)
 > Apply the same style to multiple selectors at once.
-```bash
+```css
 h1, h2, p {
   font-family: Arial;
 }
@@ -116,7 +116,7 @@ h1, h2, p {
 
 ### 6. Descendant Selector (`ancestor descendant`)
 > Targets elements inside other elements.
-```bash
+```css
 div p {
   color: purple;
 }
@@ -125,7 +125,7 @@ div p {
 
 ### 7. Child Selector (`parent > child`)
 > Selects only direct children.
-```bash
+```css
 ul > li {
   list-style-type: square;
 }
@@ -133,7 +133,7 @@ ul > li {
 
 ### 8. Adjacent Sibling Selector (`A + B`)
 > Selects the next sibling element.
-```bash
+```css
 h1 + p {
   color: orange;
 }
@@ -141,7 +141,7 @@ h1 + p {
 
 ### 9. Attribute Selector (`[attr=value]`)
 > Targets elements with specific attributes.
-```bash
+```css
 input[type="text"] {
   border: 1px solid gray;
 }
