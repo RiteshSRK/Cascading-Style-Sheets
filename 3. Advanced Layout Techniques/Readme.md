@@ -77,7 +77,7 @@ nav {
 
 ## Pro Tips
 - Use `flex: 1` to make items fill available space
-```bash
+```css
 .item { flex: 1; } /* All items grow equally */
 ```
 - Add flex-wrap: wrap for responsive wrapping
