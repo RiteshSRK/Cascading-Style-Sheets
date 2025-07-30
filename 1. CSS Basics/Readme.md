@@ -45,7 +45,7 @@
 </html>
 ```
 
-```bash
+```js
 /* styles.css */
 p {
   color: green;
