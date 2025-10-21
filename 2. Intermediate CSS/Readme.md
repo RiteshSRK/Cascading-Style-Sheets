@@ -177,7 +177,7 @@ Relative to viewport screen size:  <br>
 ## 🧩 What is a Pseudo-class?
 > A **pseudo-class** define the **special state of an element.**
 
-### 1. :hover
+### 1. `:hover`
 - Styles when you **mouse over** an element.  <br>
 - Great for buttons, links, and interactive elements.
 
@@ -188,7 +188,7 @@ button:hover {
 }
 ```
 ---
-### 2. :focus
+### 2. `:focus`
 - Styles when an element is selected (like an input field).   <br>
 - Important for **keyboard** accessibility.
 
@@ -198,7 +198,7 @@ input:focus {
 }
 ```
 --- 
-### 3. :nth-child()
+### 3. `:nth-child()`
 - Selects **specific child elements** (like every 2nd item).    <br>
 - Useful for tables, lists, and grids.
 
@@ -225,7 +225,9 @@ tr:nth-child(odd) {
 ---
 
 ## What are Pseudo-elements?
-> Pseudo-elements **insert virtual content** into the DOM — **without adding HTML elements**.
+- Pseudo-elements **insert virtual content** into the DOM — **without adding HTML elements**.
+
+- **Used to style parts of an element**.
 
 ### `::before` → Inserts content before an element.
 ```css
