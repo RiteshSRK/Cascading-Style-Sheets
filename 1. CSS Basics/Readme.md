@@ -53,19 +53,19 @@ p {
 }
 ```
 
-## 🎯 What is a CSS Selector?
+### 🎯 What is a CSS Selector?
 > A selector in CSS is used to "select" the HTML element(s) you want to style.
 
-### 🧱 Basic Syntax:
+#### 🧱 Basic Syntax:
 ```css
 selector {
   property: value;
 }
 ```
 
-## 🔹 Common CSS Selectors Explained
+### 🔹 Common CSS Selectors Explained
 
-### 1. Universal Selector (`*`)
+#### 1. Universal Selector (`*`)
 > Selects all elements on the page.
 ```css
 * {
@@ -74,7 +74,7 @@ selector {
 }
 ```
 
-### 2. Type or Tag Selector (e.g., `p`, `div`, `h1`)
+#### 2. Type or Tag Selector (e.g., `p`, `div`, `h1`)
 > Selects all elements of a specific HTML tag.
 ```css
 p {
@@ -82,7 +82,7 @@ p {
 }
 ```
 
-### 3. Class Selector (`.classname`)
+#### 3. Class Selector (`.classname`)
 > Targets all elements with a specific class attribute.
 ```html
 <p class="info">This is a paragraph.</p>
@@ -94,7 +94,7 @@ p {
 ```
 💡 You can use the same class on multiple elements.
 
-### 4. ID Selector (`#idname`)
+#### 4. ID Selector (`#idname`)
 > Targets a single element with a specific id.
 ```html
 <h1 id="main-title">Welcome</h1>
@@ -106,7 +106,7 @@ p {
 ```
 ⚠️ ID must be unique per page.
 
-### 5. Group Selector (`selector1`, `selector2`)
+#### 5. Group Selector (`selector1`, `selector2`)
 > Apply the same style to multiple selectors at once.
 ```css
 h1, h2, p {
@@ -114,7 +114,7 @@ h1, h2, p {
 }
 ```
 
-### 6. Descendant Selector (`ancestor descendant`)
+#### 6. Descendant Selector (`ancestor descendant`)
 > Targets elements inside other elements.
 ```css
 div p {
@@ -123,7 +123,7 @@ div p {
 ```
 🎯 All `<p>` tags inside a `<div>`.
 
-### 7. Child Selector (`parent > child`)
+#### 7. Child Selector (`parent > child`)
 > Selects only direct children.
 ```css
 ul > li {
@@ -131,7 +131,7 @@ ul > li {
 }
 ```
 
-### 8. Adjacent Sibling Selector (`A + B`)
+#### 8. Adjacent Sibling Selector (`A + B`)
 > Selects the next sibling element.
 ```css
 h1 + p {
@@ -139,7 +139,7 @@ h1 + p {
 }
 ```
 
-### 9. Attribute Selector (`[attr=value]`)
+#### 9. Attribute Selector (`[attr=value]`)
 > Targets elements with specific attributes.
 ```css
 input[type="text"] {
@@ -147,7 +147,7 @@ input[type="text"] {
 }
 ```
 
-## 🔎 Summary Table
+### 🔎 Summary Table
 | Selector Type | Symbol  | Example         | Selects                       |
 | ------------- | ------- | --------------- | ----------------------------- |
 | Universal     | `*`     | `*`             | All elements                  |
@@ -162,7 +162,7 @@ input[type="text"] {
 
 ---
 
-## 🛠️ Common CSS Properties
+### 🛠️ Common CSS Properties
 
 | Property     | Purpose                | Example                    |
 | ------------ | ---------------------- | -------------------------- |
@@ -176,7 +176,7 @@ input[type="text"] {
 
 ---
 
-## 📘 Basic CSS Properties
+### 📘 Basic CSS Properties
 
 | Property           | Purpose                    | Example                           | Notes                                      |
 | ------------------ | -------------------------- | --------------------------------- | ------------------------------------------ |
@@ -192,7 +192,7 @@ input[type="text"] {
 
 ---
 
-## 🧱 Margin & Padding Shorthand Breakdown
+### 🧱 Margin & Padding Shorthand Breakdown
 
 | Syntax Example             | Meaning                                  |
 | -------------------------- | ---------------------------------------- |
@@ -203,7 +203,7 @@ input[type="text"] {
 
 ---
 
-## CSS Comments
+### CSS Comments
 > CSS comments are used to **add notes** or **explanations** or **disable code** without affecting the output.
 
 `/* comment */`
