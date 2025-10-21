@@ -1,4 +1,4 @@
-# What is the CSS Box Model?
+## What is the CSS Box Model?
 > CSS Box Model defines how elements are structured and displayed on a webpage.
 
 **1. Content –** The actual `text`, `image`, or `media inside` the element.
@@ -11,12 +11,12 @@
 
 ---
 
-## Box Model Structure
+### Box Model Structure
 ![Box model](./Box%20model.png "Box Model")
 
 --- 
 
-## CSS Properties
+### CSS Properties
 | **Layer**   | **Properties**                                                              | **Example Values**       |
 | ----------- | --------------------------------------------------------------------------- | ------------------------ |
 | **Content** | `width`, `height`, `min-width`, `max-height`, etc.                          | `width: 300px;`          |
@@ -25,7 +25,7 @@
 | **Margin**  | `margin`, `margin-top`, `margin-right`, `margin-left`, `margin-bottom`      | `margin: 0 auto;`        |
 
 ---
-## 🧠 Important Notes:
+### 🧠 Important Notes:
 - Total Size = `content + padding + border + margin`
 
 - By default, `width` and `height` apply to `content-box`
@@ -34,7 +34,7 @@
 
 ---
 
-### ✅ Example:
+#### ✅ Example:
 ```css
 .box {
   width: 200px;           /* content width */
@@ -47,10 +47,10 @@
 ```
 ---
 
-# CSS display Property:
+## CSS display Property:
 > display property is used to specify how element is shown on a web page.
 
-## Comparison Table
+### Comparison Table
 | Value          | Behavior                                                               | Example Tags                | Width/Height? | New Line? | Can Set Padding/Margin? |
 | -------------- | ---------------------------------------------------------------------- | --------------------------- | ------------- | --------- | ----------------------- |
 | `block`        | Starts on a **new line** and takes **full width**                      | `<div>`, `<p>`, `<h1>`      | ✅ Yes         | ✅ Yes     | ✅ Yes                   |
@@ -59,7 +59,7 @@
 | `none`         | **Completely hides** the element (it’s not in the page layout anymore) | (Any element)               | ❌ N/A         | ❌ N/A     | ❌ N/A                   |
 
 ---
-### display: none
+#### display: none
 > Removes the element completely from the layout (as if it doesn’t exist).
 
 > Unlike visibility: hidden, it doesn’t take up space.
@@ -70,8 +70,8 @@
 
 ---
 
-## Bonus: Common Use Cases:
-### 1. Horizontal Navigation Menu
+### Bonus: Common Use Cases:
+#### 1. Horizontal Navigation Menu
 ```css
 nav li {
   display: inline-block; /* Makes list items horizontal */
@@ -79,7 +79,7 @@ nav li {
 }
 ```
 
-### 2. Hide/Show Elements with JavaScript
+#### 2. Hide/Show Elements with JavaScript
 ```js
 document.getElementById("menu").style.display = "block"; // Show
 document.getElementById("menu").style.display = "none";  // Hide
@@ -87,13 +87,13 @@ document.getElementById("menu").style.display = "none";  // Hide
 
 ---
 
-# 📍 CSS position Property
+## 📍 CSS position Property
 
 
 ---
 
-## z-index and stacking context
-### 1. What is z-index?
+### z-index and stacking context
+#### 1. What is z-index?
 
 - Determines the **front-to-back order** of overlapping elements.
 
@@ -101,7 +101,7 @@ document.getElementById("menu").style.display = "none";  // Hide
 
 - Only works on positioned elements (`relative`, `absolute`, `fixed`, `sticky`).
 
-### Example:
+#### Example:
 ```css
 .box1 {
   position: absolute;
@@ -115,31 +115,31 @@ document.getElementById("menu").style.display = "none";  // Hide
 
 ---
 
-## CSS Units: `px`, `em`, `rem`, `%`, `vh`, `vw`
+### CSS Units: `px`, `em`, `rem`, `%`, `vh`, `vw`
 > CSS units define sizes, spacing, and dimensions in web layouts.
 
-### 1. `px` (Pixels)
+#### 1. `px` (Pixels)
 Fixed size (like a ruler).  <br>
 Example: `width: 100px` → Always 100 pixels.
 
-### 2. `em`
+#### 2. `em`
 Relative to parent’s font size.   <br>
 Example: If parent has `font-size: 20px`, then `1em = 20px`.
 
-### 3. `rem`
+#### 3. `rem`
 Relative to root (`<html>`) font size (default: `16px`).  <br>
 Example: `2rem = 32px` (if root is `16px`).
 
-### 4. `%` (Percent)
+#### 4. `%` (Percent)
 Relative to parent’s size.  <br>
 Example: `width: 50%` → Half of parent’s width.
 
-### 5. `vh` / `vw`
+#### 5. `vh` / `vw`
 Relative to screen size:  <br>
 `100vh` = Full screen height. <br>
 `50vw` = Half screen width.
 
-## When to Use Which Unit?
+### When to Use Which Unit?
 | **Unit**    | **Best For**                             | **Scalable?** | **Relative To**                              |
 | ----------- | ---------------------------------------- | ------------- | -------------------------------------------- |
 | `px`        | Borders, fixed-size icons                | ❌ No          | Absolute (screen pixels)                     |
@@ -151,7 +151,7 @@ Relative to screen size:  <br>
 
 
 ---
-## Pro Tips
+### Pro Tips
 - Use `rem` for **fonts/padding** → Ensures consistency.
 
 - Use `%` or `vw/vh` for **fluid layouts** → Better responsiveness.
@@ -160,7 +160,7 @@ Relative to screen size:  <br>
 
 - Combine units (e.g., `calc(50% - 20px)`).
 
-## Summary
+### Summary
 - `px` → Fixed sizes (borders, icons).
 
 - `em` → Relative to **parent** (but compounds).
@@ -174,10 +174,10 @@ Relative to screen size:  <br>
 
 ---
 
-# 🧩 What is a Pseudo-class?
+## 🧩 What is a Pseudo-class?
 > A **pseudo-class** define the **special state of an element.**
 
-## 1. :hover
+### 1. :hover
 - Styles when you **mouse over** an element.  <br>
 - Great for buttons, links, and interactive elements.
 
@@ -188,7 +188,7 @@ button:hover {
 }
 ```
 ---
-## 2. :focus
+### 2. :focus
 - Styles when an element is selected (like an input field).   <br>
 - Important for **keyboard** accessibility.
 
@@ -198,7 +198,7 @@ input:focus {
 }
 ```
 --- 
-## 3. :nth-child()
+### 3. :nth-child()
 - Selects **specific child elements** (like every 2nd item).    <br>
 - Useful for tables, lists, and grids.
 
@@ -215,7 +215,7 @@ tr:nth-child(odd) {
 }
 ```
 
-## Bonus: Other Useful Pseudo-classes
+### Bonus: Other Useful Pseudo-classes
 `:active` → When clicked (e.g., button pressed).
 
 `:checked` → For checked checkboxes/radio buttons.
@@ -224,10 +224,10 @@ tr:nth-child(odd) {
 
 ---
 
-# What are Pseudo-elements?
+## What are Pseudo-elements?
 > Pseudo-elements **insert virtual content** into the DOM — **without adding HTML elements**.
 
-## `::before` → Inserts content before an element.
+### `::before` → Inserts content before an element.
 ```css
 p::before {
   content: "👉 ";
@@ -235,7 +235,7 @@ p::before {
 }
 ```
 
-## `::after` → Inserts content after an element.
+### `::after` → Inserts content after an element.
 ```css
 p::after {
   content: " ✅";
@@ -247,14 +247,14 @@ p::after {
 
 ---
 
-## 1. `opacity` - Element Transparency
+### 1. `opacity` - Element Transparency
 > Controls how transparent an element is.
 ```css
 div {
   opacity: 0.5; /* 50% transparent */
 }
 ```
-## 2. visibility - Hide Without Removing Space
+### 2. visibility - Hide Without Removing Space
 > Controls the element is **visible or hidden, without removing its space.**
 ```css
 div {
@@ -262,17 +262,17 @@ div {
 }
 ```
 
-## vs `display: none`:
+### vs `display: none`:
 `visibility: hidden` → **Keeps space** in layout  <br>
 `display: none` → **Removes completely** (no space)
 
-### Example Use Cases:
+#### Example Use Cases:
 - Hide form errors until needed   <br>
 - Toggle UI elements without layout shifts
 
 ---
 
-## 3. overflow - Handle Extra Content
+### 3. overflow - Handle Extra Content
 > Controls content overflows its container.
 ```css
 .container {
@@ -287,16 +287,16 @@ div {
 | `scroll`  | Always shows scrollbars, even if content fits          |
 | `auto`    | Shows scrollbars **only if** the content overflows     |
 
-### Variations:
+#### Variations:
 - `overflow-x` (horizontal) / `overflow-y` (vertical)   <br>
 - `overflow: clip` (new, stricter than `hidden`)
 
 --- 
 <br>
 
-# `cursor`, `text-align`, `vertical-align`
+## `cursor`, `text-align`, `vertical-align`
 
-## 1. `cursor` - Control Mouse Pointer Appearance
+### 1. `cursor` - Control Mouse Pointer Appearance
 > Changes how the mouse cursor looks when hovering over an element.
 ```css
 button {
@@ -304,7 +304,7 @@ button {
 }
 ```
 
-## Common Values:
+### Common Values:
 | **Value**     | **Appearance** | **Best For**                |
 | ------------- | -------------- | --------------------------- |
 | `pointer`     | 👆 Hand        | Buttons, links              |
@@ -316,7 +316,7 @@ button {
 | `zoom-in/out` | 🔍 Magnifier   | Zoomable images or maps     |
 
 ---
-## 2. text-align - Horizontal Text Alignment
+### 2. text-align - Horizontal Text Alignment
 > Controls how text is aligned left-to-right in its container.
 ```css
 p {
@@ -331,21 +331,21 @@ p {
 | `center`  | **Centers** the text horizontally                                    |
 | `justify` | Stretches text to fill the full width, adjusting space between words |
 
-### Works With:
+#### Works With:
 - Block elements (`div`, `p`, `h1`)
 
 - Table cells (`td`, `th`)
 
 ---
 
-## 3. vertical-align - Vertical Alignment
+### 3. vertical-align - Vertical Alignment
 > Aligns inline/inline-block elements vertically (not for block elements!).
 ```css
 img {
   vertical-align: middle; /* Aligns with text */
 }
 ```
-### Common Values:
+#### Common Values:
 | **Value**     | **Effect**                                                               |
 | ------------- | ------------------------------------------------------------------------ |
 | `baseline`    | Aligns element with the **baseline** of the surrounding text *(default)* |
@@ -355,7 +355,7 @@ img {
 | `text-top`    | Aligns element with the **top of the parent text**                       |
 | `text-bottom` | Aligns element with the **bottom of the parent text**                    |
 
-### Where It Works:
+#### Where It Works:
 - Images (img)
 
 - Icons (Font Awesome)
