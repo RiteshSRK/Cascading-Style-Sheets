@@ -135,7 +135,7 @@ Relative to parent’s size.  <br>
 Example: `width: 50%` → Half of parent’s width.
 
 #### 5. `vh` / `vw`
-Relative to screen size:  <br>
+Relative to viewport screen size:  <br>
 `100vh` = Full screen height. <br>
 `50vw` = Half screen width.
 
