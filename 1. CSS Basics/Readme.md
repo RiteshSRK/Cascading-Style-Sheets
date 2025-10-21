@@ -1,16 +1,16 @@
-# What is CSS?
+## What is CSS?
 > CSS (**Cascading Style Sheets**) is used to style and layout HTML elements 
 
-## How to Apply CSS to HTML.
+### How to Apply CSS to HTML.
 > There are 3 ways to apply CSS:
 
-### 1. Inline CSS
+#### 1. Inline CSS
 > Write CSS directly inside an HTML element using the style attribute.
 ```html
 <p style="color: red; font-size: 20px;">This is a red paragraph.</p>
 ```
 
-### 2. Internal CSS
+#### 2. Internal CSS
 > Place CSS rules inside a `<style>` tag in the `<head>` of your HTML document.
 
 ```html
@@ -30,7 +30,7 @@
 </html>
 ```
 
-### 3. External CSS
+#### 3. External CSS
 > Link a separate `.css` file to your HTML using the `<link>` tag.
 ```html
 <!-- index.html -->
