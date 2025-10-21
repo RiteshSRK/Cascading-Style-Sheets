@@ -5,7 +5,7 @@
 > There are 3 ways to apply CSS:
 
 #### 1. Inline CSS
-> Write CSS directly inside an HTML element using the style attribute.
+> Write CSS directly inside an HTML element using the **style attribute**.
 ```html
 <p style="color: red; font-size: 20px;">This is a red paragraph.</p>
 ```
@@ -54,7 +54,7 @@ p {
 ```
 
 ### 🎯 What is a CSS Selector?
-> A selector in CSS is used to "select" the HTML element(s) you want to style.
+> A selector in CSS is used to "select" the HTML element(s) for styling.
 
 #### 🧱 Basic Syntax:
 ```css
@@ -75,7 +75,7 @@ selector {
 ```
 
 #### 2. Type or Tag Selector (e.g., `p`, `div`, `h1`)
-> Selects all elements of a specific HTML tag.
+> Selects all elements of **a specific HTML tag**.
 ```css
 p {
   color: blue;
@@ -83,7 +83,7 @@ p {
 ```
 
 #### 3. Class Selector (`.classname`)
-> Targets all elements with a specific class attribute.
+> Targets all elements with **a specific class attribute**.
 ```html
 <p class="info">This is a paragraph.</p>
 ```
