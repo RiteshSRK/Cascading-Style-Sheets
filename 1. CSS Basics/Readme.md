@@ -95,7 +95,7 @@ p {
 💡 You can use the same class on multiple elements.
 
 #### 4. ID Selector (`#idname`)
-> Targets a single element with a specific id.
+> Selects a **single element** with a **specific id**.
 ```html
 <h1 id="main-title">Welcome</h1>
 ```
