@@ -89,6 +89,35 @@ document.getElementById("menu").style.display = "none";  // Hide
 
 ## 📍 CSS position Property
 
+- The `position` property in CSS defines **how an element is positioned on a web page.**
+
+#### Syntax
+
+```css
+.element {
+  position: value;
+}
+```
+
+#### Values:
+`static`, `relative`, `absolute`, `fixed`, `sticky`
+
+### Types of Position
+
+### (a) Static (Default)
+
+- Elements follow **normal document flow**.
+- `top`, `left`, `right`, `bottom` do not work.
+
+```css
+div {
+  position: static;
+}
+```
+
+
+
+
 
 ---
 
