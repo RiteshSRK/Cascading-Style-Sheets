@@ -63,3 +63,70 @@ input[type="text"]{
 }
 ```
 
+---
+
+### Pseudo Class and Pseudo Elements
+
+| Basis    | Pseudo Class                          | Pseudo Element                        |
+| -------- | ------------------------------------- | ------------------------------------- |
+| Purpose  | Selects a special state of an element | Selects a specific part of an element |
+| Syntax   | Uses single colon `:`                 | Uses double colon `::`                |
+| Example  | `:hover`, `:active`                   | `::first-letter`, `::first-line`      |
+| Works On | Entire element state                  | Specific part of content              |
+| Use Case | Styling user actions or conditions    | Styling portions of text/content      |
+
+### Pseudo Class
+
+| Pseudo Class     | Example              | Description                                          |
+| ---------------- | -------------------- | ---------------------------------------------------- |
+| `:hover`         | `button:hover{}`     | Applies style when mouse is over the element         |
+| `:active`        | `button:active{}`    | Applies style when element is being clicked          |
+| `:checked`       | `input:checked{}`    | Applies style to checked radio buttons or checkboxes |
+| `:nth-of-type()` | `p:nth-of-type(2){}` | Selects specific element based on position           |
+
+```css
+button:hover{
+    background-color: blue;
+    color: white;
+}
+
+button:active{
+    background-color: red;
+}
+
+input:checked{
+    width: 20px;
+    height: 20px;
+}
+
+p:nth-of-type(2){
+    color: green;
+    font-weight: bold;
+}
+```
+
+### Pseudo Elements
+
+| Pseudo Element   | Example             | Description                      |
+| ---------------- | ------------------- | -------------------------------- |
+| `::first-letter` | `p::first-letter{}` | Styles the first letter of text  |
+| `::first-line`   | `p::first-line{}`   | Styles the first line of text    |
+| `::selection`    | `p::selection{}`    | Styles selected/highlighted text |
+
+```css
+p::first-letter{
+    font-size: 30px;
+    color: red;
+}
+
+p::first-line{
+    font-weight: bold;
+    color: blue;
+}
+
+p::selection{
+    background-color: yellow;
+    color: black;
+}
+```
+
