@@ -171,3 +171,47 @@ h2{
 
 ---
 
+### Box Model in CSS
+
+| Property        | Syntax / Values              | Description                |
+| --------------- | ---------------------------- | -------------------------- |
+| `height`        | `height: 100px;`             | Sets height of element     |
+| `width`         | `width: 100px;`              | Sets width of element      |
+| `border`        | `border: 2px solid red;`     | Adds border around element |
+| `border-width`  | `border-width: 2px;`         | Sets border thickness      |
+| `border-style`  | `solid / dashed / dotted`    | Sets border style          |
+| `border-color`  | `border-color: red;`         | Sets border color          |
+| `padding`       | `padding: 10px;`             | Space inside border        |
+| `margin`        | `margin: 50px;`              | Space outside border       |
+| `border-radius` | `border-radius: 10px / 50%;` | Rounds element corners     |
+
+
+#### Padding Shorthand
+
+| Values                          | Meaning                     |
+| ------------------------------- | --------------------------- |
+| `padding: 10px;`                | All sides                   |
+| `padding: 10px 20px;`           | Top-Bottom / Left-Right     |
+| `padding: 10px 20px 30px;`      | Top / Left-Right / Bottom   |
+| `padding: 10px 20px 30px 40px;` | Top / Right / Bottom / Left |
+
+
+#### Margin Shorthand
+
+| Values                         | Meaning                     |
+| ------------------------------ | --------------------------- |
+| `margin: 20px;`                | All sides                   |
+| `margin: 10px 20px;`           | Top-Bottom / Left-Right     |
+| `margin: 10px 20px 30px;`      | Top / Left-Right / Bottom   |
+| `margin: 10px 20px 30px 40px;` | Top / Right / Bottom / Left |
+
+
+#### Border Radius Shorthand
+
+| Values                                | Meaning                                           |
+| ------------------------------------- | ------------------------------------------------- |
+| `border-radius: 10px;`                | All corners                                       |
+| `border-radius: 10px 20px;`           | Top-Left & Bottom-Right / Top-Right & Bottom-Left |
+| `border-radius: 10px 20px 30px 40px;` | Top-Left / Top-Right / Bottom-Right / Bottom-Left |
+
+---
