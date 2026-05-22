@@ -160,3 +160,14 @@ Inline Style > ID > Class > Element
 
 ---
 
+### `!important` in CSS 
+- `!important` is used to give a CSS property the **highest priority**.
+
+```css
+h2{
+	Background-color: blue  !important;
+}
+```
+
+---
+
