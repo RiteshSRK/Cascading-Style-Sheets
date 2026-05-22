@@ -130,3 +130,33 @@ p::selection{
 }
 ```
 
+---
+
+### Selector Specificity in CSS
+
+| Priority Level | Selector Type                   | Examples                            |
+| -------------- | ------------------------------- | ----------------------------------- |
+| Highest        | ID Selector                     | `#myId`                             |
+| Medium         | Class, Attribute & Pseudo-class | `.box` , `[type="text"]` , `:hover` |
+| Lowest         | Element & Pseudo-element        | `h1` , `p` , `::first-letter`       |
+
+
+```css
+ID > Class/Attribute/Pseudo-class > Element/Pseudo-element
+```
+
+#### Specificity Values
+
+| Selector                         | Specificity Value |
+| -------------------------------- | ----------------- |
+| Inline Style                     | `1000`            |
+| ID                               | `100`             |
+| Class / Attribute / Pseudo-class | `10`              |
+| Element / Pseudo-element         | `1`               |
+
+```css
+Inline Style > ID > Class > Element
+```
+
+---
+
