@@ -11,6 +11,9 @@
 
 ---
 
+### CSS Layout Topics
+![CSS Layout](./CSS%20Layout%20Topics.png "CSS Layout")
+
 ### Box Model Structure
 ![Box model](./Box%20model.png "Box Model")
 
