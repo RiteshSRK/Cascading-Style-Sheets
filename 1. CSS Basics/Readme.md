@@ -66,7 +66,9 @@ selector {
 ### 🔹 Common CSS Selectors Explained
 
 #### 1. Universal Selector (`*`)
+
 > Selects all elements on the page.
+
 ```css
 * {
   margin: 0;
@@ -74,8 +76,10 @@ selector {
 }
 ```
 
-#### 2. Type or Tag Selector (e.g., `p`, `div`, `h1`)
+#### 2. Element / Type or Tag Selector (e.g., `p`, `div`, `h1`)
+
 > Selects all elements of **a specific HTML tag**.
+
 ```css
 p {
   color: blue;
@@ -83,7 +87,9 @@ p {
 ```
 
 #### 3. Class Selector (`.classname`)
+
 > Targets all elements with **a specific class attribute**.
+
 ```html
 <p class="info">This is a paragraph.</p>
 ```
@@ -107,7 +113,9 @@ p {
 ⚠️ ID must be unique per page.
 
 #### 5. Group Selector (`selector1`, `selector2`)
+
 > Apply the same style to multiple selectors at once.
+
 ```css
 h1, h2, p {
   font-family: Arial;
@@ -115,32 +123,51 @@ h1, h2, p {
 ```
 
 #### 6. Descendant Selector (`ancestor descendant`)
-> Targets elements inside other elements.
+
+> Targets elements inside other elements, at any nesting level.
+
 ```css
 div p {
-  color: purple;
+  color: red;
 }
 ```
+
+```html
+<div>
+  <p>Red</p>
+
+  <section>
+    <p>Also red</p>
+  </section>
+</div>
+```
+
 🎯 All `<p>` tags inside a `<div>`.
 
 #### 7. Child Selector (`parent > child`)
+
 > Selects only direct children.
+
 ```css
 ul > li {
   list-style-type: square;
 }
 ```
 
-#### 8. Adjacent Sibling Selector (`A + B`)
+#### 8. Adjacent Sibling Selector `+`
+
 > Selects the next sibling element.
+
 ```css
 h1 + p {
   color: orange;
 }
 ```
 
-#### 9. Attribute Selector (`[attr=value]`)
+#### 9. Attribute Selector (`[attr="value"]`)
+
 > Targets elements with specific attributes.
+
 ```css
 input[type="text"] {
   border: 1px solid gray;
