@@ -102,12 +102,17 @@ document.getElementById("menu").style.display = "none";  // Hide
 }
 ```
 
-#### Values:
-`static`, `relative`, `absolute`, `fixed`, `sticky`
-
 ### Types of Position
 
-### (a) Static (Default)
+- `static`
+- `relative`
+- `absolute`
+- `fixed`
+- `sticky`
+
+
+
+### 1️⃣ Static (Default)
 
 - Elements follow **normal document flow**.
 - `top`, `left`, `right`, `bottom` do not work.
