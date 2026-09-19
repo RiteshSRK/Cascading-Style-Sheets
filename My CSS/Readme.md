@@ -368,3 +368,70 @@ Color → Shadow color
 
 ---
 
+## 13. CSS `Background` Image
+
+| Property | Meaning | Example | Main Use |
+|---|---|---|---|
+| `background-image` | Sets an image as the background of an element | `background-image: url("image.jpg");` | Adding background images |
+| `background-size` | Controls the size of the background image | `background-size: cover;` | Fit image to container |
+| `background-position` | Controls the position of the background image | `background-position: center;` | Positioning the image |
+| `background-repeat` | Controls whether the image repeats | `background-repeat: no-repeat;` | Preventing image repetition |
+| `background-attachment` | Controls how the background moves while scrolling | `background-attachment: fixed;` | Fixed/parallax-style backgrounds |
+
+```css
+.hero {
+  height: 500px;
+  background-image: url("hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+```
+
+Common Values
+
+| Property | Common Values |
+|---|---|
+| `background-size` | `cover`, `contain`, `auto` |
+| `background-position` | `center`, `top`, `bottom`, `left`, `right` |
+| `background-repeat` | `repeat`, `no-repeat`, `repeat-x`, `repeat-y` |
+| `background-attachment` | `scroll`, `fixed`, `local` |
+
+<br>
+
+---
+
+### 🎯 `background: linear-gradient(...)`
+
+| Part | Meaning | Example |
+|---|---|---|
+| `linear-gradient()` | Creates a smooth color transition | `linear-gradient(...)` |
+| `to right bottom` | Sets the gradient direction from **top-left to bottom-right** | `to right bottom` |
+| `yellowgreen` | First color | `yellowgreen` |
+| `yellow` | Second color | `yellow` |
+| `cyan` | Third color | `cyan` |
+| `background` | Sets the gradient as the element's background | `background: linear-gradient(...);` |
+
+```css
+.box {
+  width: 400px;
+  height: 200px;
+  background: linear-gradient(to right bottom, yellowgreen, yellow, cyan);
+}
+```
+
+Direction:
+
+```
+Top-Left
+   ↘
+    ↘
+     ↘
+      Bottom-Right
+```
+
+The colors smoothly transition in this direction:  
+Yellowgreen → Yellow → Cyan.
+
+---
+
