@@ -208,6 +208,45 @@ Parent
 - Tooltips
 - Product labels
 
+### 4️⃣ `position: fixed`
+
+A `fixed` element is positioned relative to the **viewport**.
+
+The element stays in the same place even when the page is scrolled.
+
+```css
+.chat-button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+```
+
+Conceptually:
+
+```
+Browser viewport
+
+┌──────────────────────────────┐
+│                              │
+│          Website             │
+│                              │
+│                              │
+│                       ┌────┐ │
+│                       │Chat│ │
+│                       └────┘ │
+└──────────────────────────────┘
+```
+The button stays in that viewport position while scrolling.
+
+#### Common Uses
+
+- Fixed navbar
+- Chat button
+- Floating action button
+- Back-to-top button
+- Cookie notification
+
 
 
 ---
