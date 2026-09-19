@@ -194,6 +194,20 @@ Parent
 └─────────────────────────────┘
 ```
 
+#### Interview Answer
+
+`position: absolute` removes element from the normal document flow and positions it relative to its nearest positioned ancestor.
+
+#### This is extremely common in:
+- Cards
+- Notification badges
+- Dropdowns
+- Icons
+- Image overlays
+- Buttons
+- Tooltips
+- Product labels
+
 
 
 ---
