@@ -496,3 +496,174 @@ Flexbox (**Flexible Box Layout**) is a **one-dimensional layout system** used to
 
 Flexbox is a one-dimensional CSS layout system used to arrange and align elements along a main axis and a cross axis, making responsive layouts easier to create.
 
+---
+
+## 15. CSS `Grid`
+
+CSS Grid is a **two-dimensional layout system** used to arrange elements in **rows and columns**.
+
+| Grid Property | Meaning | Common Values / Syntax | Main Use | Example |
+|---|---|---|---|---|
+| `display: grid` | Creates a grid container | `grid` | Enables CSS Grid | `display: grid;` |
+| `grid-template-columns` | Defines the number and size of columns | `px`, `%`, `fr`, `repeat()` | Creates columns | `grid-template-columns: repeat(3, 1fr);` |
+| `grid-template-rows` | Defines the size of rows | `px`, `%`, `fr`, `repeat()` | Creates rows | `grid-template-rows: 100px 200px;` |
+| `gap` | Sets space between rows and columns | `px`, `rem`, etc. | Adds spacing | `gap: 20px;` |
+| `row-gap` | Sets space between rows | Length | Controls row spacing | `row-gap: 20px;` |
+| `column-gap` | Sets space between columns | Length | Controls column spacing | `column-gap: 20px;` |
+| `grid-column` | Controls an item's column position | `start / end` | Places item across columns | `grid-column: 1 / 3;` |
+| `grid-row` | Controls an item's row position | `start / end` | Places item across rows | `grid-row: 1 / 3;` |
+| `grid-column-start` | Defines where a grid item starts horizontally | Grid line number | Sets starting column | `grid-column-start: 1;` |
+| `grid-column-end` | Defines where a grid item ends horizontally | Grid line number | Sets ending column | `grid-column-end: 3;` |
+| `grid-row-start` | Defines where a grid item starts vertically | Grid line number | Sets starting row | `grid-row-start: 1;` |
+| `grid-row-end` | Defines where a grid item ends vertically | Grid line number | Sets ending row | `grid-row-end: 3;` |
+| `grid-template-areas` | Creates named areas in the grid | String names | Creates structured layouts | `grid-template-areas: "header header";` |
+| `grid-area` | Assigns an item to a named grid area | Area name | Places items in named areas | `grid-area: header;` |
+| `justify-items` | Aligns grid items horizontally inside their cells | `start`, `center`, `end`, `stretch` | Horizontal item alignment | `justify-items: center;` |
+| `align-items` | Aligns grid items vertically inside their cells | `start`, `center`, `end`, `stretch` | Vertical item alignment | `align-items: center;` |
+| `place-items` | Shorthand for `align-items` + `justify-items` | Two values | Aligns all grid items | `place-items: center;` |
+| `justify-content` | Aligns the entire grid horizontally | `start`, `center`, `end`, `space-between`, etc. | Positions the grid | `justify-content: center;` |
+| `align-content` | Aligns the entire grid vertically | `start`, `center`, `end`, `space-between`, etc. | Positions the grid | `align-content: center;` |
+| `place-content` | Shorthand for `align-content` + `justify-content` | Two values | Positions the entire grid | `place-content: center;` |
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+```
+
+```
+┌────────┐ ┌────────┐ ┌────────┐
+│ Item 1 │ │ Item 2 │ │ Item 3 │
+└────────┘ └────────┘ └────────┘
+
+┌────────┐ ┌────────┐ ┌────────┐
+│ Item 4 │ │ Item 5 │ │ Item 6 │
+└────────┘ └────────┘ └────────┘
+```
+
+Grid works with **both rows and columns**.
+
+---
+
+### 1. display: grid
+
+It makes an element a grid container.
+
+```css
+.container {
+  display: grid;
+}
+```
+
+The direct children become grid items.
+
+```html
+<div class="container">
+  <div>Item 1</div>
+  <div>Item 2</div>
+  <div>Item 3</div>
+</div>
+```
+
+```
+Grid Container
+      │
+      ├── Item 1 → Grid Item
+      ├── Item 2 → Grid Item
+      └── Item 3 → Grid Item
+```
+
+### 2. grid-template-columns
+
+It defines the number and size of columns.
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+}
+```
+```
+┌──────────┐ ┌──────────┐ ┌──────────┐
+│ Column 1 │ │ Column 2 │ │ Column 3 │
+└──────────┘ └──────────┘ └──────────┘
+```
+
+👉 **Using `fr`**
+
+`fr` means fraction of available space.
+
+```css
+grid-template-columns: 1fr 1fr 1fr;
+```
+
+This creates three equal columns.
+```
+┌────────┬────────┬────────┐
+│   1fr  │   1fr  │   1fr  │
+└────────┴────────┴────────┘
+```
+
+### 3. grid-template-rows
+
+It defines the size of rows.
+
+```css
+.container {
+  grid-template-rows: 100px 200px;
+}
+```
+
+```
+┌──────────────────────────┐
+│        Row 1 — 100px     │
+├──────────────────────────┤
+│        Row 2 — 200px     │
+└──────────────────────────┘
+```
+
+### 4. `repeat()`
+
+Instead of writing the same value multiple times, we can use `repeat()`.
+
+Instead of:
+
+```css
+grid-template-columns: 1fr 1fr 1fr;
+```
+
+Write:
+
+```css
+grid-template-columns: repeat(3, 1fr);
+```
+
+Meaning:
+> Create 3 columns, each taking 1 fraction of the available space.
+
+### 5. `gap` 
+
+`gap` creates space between grid items.
+
+```css
+.container {
+  display: grid;
+  gap: 20px;
+}
+```
+
+```
+┌──────┐   20px   ┌──────┐
+│ Item │ ←──────→ │ Item │
+└──────┘          └──────┘
+```
+
+**You can also use:**
+
+```css
+row-gap: 20px;
+column-gap: 30px;
+```
+
