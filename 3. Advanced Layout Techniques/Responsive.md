@@ -23,12 +23,14 @@
 - `min height`,   `min width`
 - `min width`,    `max width`
 
-```bash
+```css
 @media (max-width: 600px) {
     /* CSS Responsive Code */
 }
 ```
+
 ---
+
 # Key point to keep in mind to make website responsive
 1. CSS flexbox
 2. CSS Units

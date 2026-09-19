@@ -1,4 +1,4 @@
-### Text Properties
+## 1️⃣ Text Properties
 
 | Property                | Values / Examples                                      | Description                      |
 | ----------------------- | ------------------------------------------------------ | -------------------------------- |
@@ -15,7 +15,7 @@
 
 ---
 
-### Selectors
+## 2️⃣ Selectors
 
 | Selector                    | Syntax                 | Description                                     |
 | --------------------------- | ---------------------- | ----------------------------------------------- |
@@ -65,7 +65,7 @@ input[type="text"]{
 
 ---
 
-### Pseudo Class and Pseudo Elements
+## 3️⃣ `Pseudo` Class and `Pseudo` Elements
 
 | Basis    | Pseudo Class                          | Pseudo Element                        |
 | -------- | ------------------------------------- | ------------------------------------- |
@@ -75,7 +75,7 @@ input[type="text"]{
 | Works On | Entire element state                  | Specific part of content              |
 | Use Case | Styling user actions or conditions    | Styling portions of text/content      |
 
-### Pseudo Class
+### `Pseudo` Class
 
 | Pseudo Class     | Example              | Description                                          |
 | ---------------- | -------------------- | ---------------------------------------------------- |
@@ -105,7 +105,7 @@ p:nth-of-type(2){
 }
 ```
 
-### Pseudo Elements
+### `Pseudo` Elements
 
 | Pseudo Element   | Example             | Description                      |
 | ---------------- | ------------------- | -------------------------------- |
@@ -132,7 +132,7 @@ p::selection{
 
 ---
 
-### Selector Specificity in CSS
+## 4️⃣ Selector Specificity in CSS
 
 | Priority Level | Selector Type                   | Examples                            |
 | -------------- | ------------------------------- | ----------------------------------- |
@@ -160,7 +160,7 @@ Inline Style > ID > Class > Element
 
 ---
 
-### `!important` in CSS 
+## 5️⃣ `!important` in CSS 
 - `!important` is used to give a CSS property the **highest priority**.
 
 ```css
@@ -171,7 +171,7 @@ h2{
 
 ---
 
-### Box Model in CSS
+## 6️⃣ Box Model in CSS
 
 | Property        | Syntax / Values              | Description                |
 | --------------- | ---------------------------- | -------------------------- |
@@ -215,3 +215,103 @@ h2{
 | `border-radius: 10px 20px 30px 40px;` | Top-Left / Top-Right / Bottom-Right / Bottom-Left |
 
 ---
+
+##  7️⃣ `Display` Property
+
+| Display Value  | Meaning                       | Behavior                              | Width & Height           | Common Use |
+|----------------|-------------------------------|---------------------------------------|--------------------------|------------|
+| `inline`       | Inline element                | Stays on the same line                | Generally not applicable | Text, links, `<span>` |
+| `block`        | Block-level element           | Starts on a new line                  | Works | Sections, containers |
+| `inline-block` | Combination of inline + block | Stays on the same line                | Works | Buttons, menu items |
+| `flex`         | Flex container                | Arranges children in a row or column  | Works | Navigation bars, alignment   |
+| `grid`         | Grid container                | Arranges children in rows and columns | Works | Cards, page layouts         |
+| `none`         | Hidden element                | Completely removed from the layout    | No space occupied | Hiding elements    |
+
+---
+
+| `display` Value | Main Use                                        | Example                       |
+|-----------------|-------------------------------------------------|-------------------------------|
+| `inline`        | Text/inline content                             | `<span>`, `<a>`               |
+| `block`         | Sections & containers                           | `<div>`, `<p>`, `<section>`   |
+| `inline-block`  | Same line + custom size                         | Buttons, menu items           |
+| `flex`          | **1D layout** (row/column)                      | Navbar, cards                 |
+| `grid`          | **2D layout** (rows + columns)                  | Page/card layouts             |
+| `none`          | Completely hides/removes element from layout    | Hide menu/modal               |
+
+---
+
+## 8️⃣ Units in CSS
+
+| Unit Type | Unit | Based On | Main Use | Example |
+|---|---|---|---|---|
+| **Absolute** | `px` | Fixed pixels | Precise sizing | `width: 200px;` |
+| **Relative** | `%` | Parent element | Responsive sizing relative to parent | `width: 50%;` |
+| **Relative** | `em` | Parent element's font size | Scaling based on font size | `font-size: 1.5em;` |
+| **Relative** | `rem` | Root (`html`) font size | Consistent, scalable sizing | `font-size: 2rem;` |
+| **Relative** | `vh` | Viewport height | Sizing based on screen height | `height: 100vh;` |
+| **Relative** | `vw` | Viewport width | Sizing based on screen width | `width: 100vw;` |
+
+<br> 
+
+
+| Property | Meaning | Purpose | Example |
+|---|---|---|---|
+| `max` | Maximum limit | Prevents an element from becoming larger than a specified value | `max-width: 1200px;` |
+| `min` | Minimum limit | Prevents an element from becoming smaller than a specified value | `min-width: 300px;` |
+| `max-width` | Maximum width | Sets the maximum allowed width | `max-width: 100%;` |
+| `min-width` | Minimum width | Sets the minimum allowed width | `min-width: 200px;` |
+| `max-height` | Maximum height | Sets the maximum allowed height | `max-height: 500px;` |
+| `min-height` | Minimum height | Sets the minimum allowed height | `min-height: 200px;` |
+
+## 9️⃣ Alpha Channel
+
+| Property / Concept | Meaning | Range | Example | Use |
+|---|---|---|---|---|
+| **Alpha Channel** | Controls the **opacity/transparency** of a color | `0` to `1` | `rgba(255, 255, 255, 0.3)` | Making colors transparent or semi-transparent |
+| `0` | Completely transparent | `0` | `rgba(255, 255, 255, 0)` | Invisible color |
+| `0.5` | 50% transparent | `0`–`1` | `rgba(255, 255, 255, 0.5)` | Semi-transparent color |
+| `1` | Completely opaque | `0`–`1` | `rgba(255, 255, 255, 1)` | Fully visible color |
+
+```html
+<div class="box">Hello CSS</div>
+```
+
+```cs
+.box {
+  background-color: rgba(0, 0, 255, 0.5);
+  color: white;
+}
+```
+
+| Value | Meaning |
+|---|---|
+| `0` | Red |
+| `0` | Green |
+| `255` | Blue |
+| `0.5` | 50% opacity / transparency |
+
+⚡ Important: Alpha affects the color, not the entire element.
+
+## 🔟 Opacity
+
+| Property | Meaning | Range | Example | Effect |
+|---|---|---|---|---|
+| **`opacity`** | Controls the transparency of the **entire element** | `0` to `1` | `opacity: 0.5;` | Makes the element 50% transparent |
+| `0` | Completely transparent | `0` | `opacity: 0;` | Element becomes invisible |
+| `0.5` | 50% transparent | `0`–`1` | `opacity: 0.5;` | Semi-transparent element |
+| `1` | Completely opaque | `0`–`1` | `opacity: 1;` | Fully visible element |
+
+```html
+<div class="box">Hello CSS</div>
+```
+
+```css
+.box {
+  background-color: blue;
+  color: white;
+  opacity: 0.5;
+}
+```
+
+---
+
