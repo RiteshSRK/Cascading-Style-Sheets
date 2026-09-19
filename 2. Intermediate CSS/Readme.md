@@ -247,6 +247,52 @@ The button stays in that viewport position while scrolling.
 - Back-to-top button
 - Cookie notification
 
+#### Interview Answer
+
+`position: fixed` positions element relative to the viewport and keeps it fixed while the user scrolls.
+
+### 5️⃣ `position: sticky`
+
+`sticky` is combination of normal-flow behavior with a scrolling threshold.
+
+`position: sticky` toggles between a `relative` and `fixed` position, depending on the scroll position.
+
+```css
+.header {
+  position: sticky;
+  top: 0;
+}
+```
+
+When the user scrolls and the element reaches the top of its scrolling context, it can remain stuck there.
+
+```
+Before scrolling:
+
+Products
+────────────
+
+Content
+Content
+Content
+
+
+After scrolling:
+
+Products  ← stays at top
+────────────
+
+Content
+Content
+Content
+```
+
+#### Common Uses
+
+- Sticky navbar
+- Sticky sidebar
+- Table headers
+- Section headings
 
 
 ---
