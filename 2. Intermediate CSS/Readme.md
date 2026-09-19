@@ -94,7 +94,7 @@ document.getElementById("menu").style.display = "none";  // Hide
 
 The CSS `position` property defines **how an element is positioned on a webpage.**
 
-- Used with `top`, `right`, `bottom`, and `left`.
+- Used with (`top`, `right`, `bottom`, `left`) and `z-index` interact with it.
 
 #### Syntax
 
@@ -114,19 +114,39 @@ The CSS `position` property defines **how an element is positioned on a webpage.
 
 
 
-### 1️⃣ `Static`
+### 1️⃣ `position: static`
 
-- static is the **default position** of every element.
 - Elements follow **normal document flow**.
+- `static` is the **default position** of every element.
 - `top`, `right`, `bottom`, `left`  do not work.
 
 ```css
-div {
+.box {
   position: static;
+  top: 20px;
 }
 ```
 
-(b) position: relative;
+⚡ The `top: 20px` will not move the element because its position is `static`.
+
+### 2️⃣ `position: relative`
+
+A relatively positioned element:
+- stays in the normal document flow
+- keeps its original space
+- can be moved using `top`, `right`, `bottom`, and `left`
+
+```css
+.box {
+  position: relative;
+  top: 30px;
+  left: 50px;
+}
+```
+
+⚡ the element is positioned relative to **its own original position.**
+
+### 3️⃣ `position: absolute`
 
 
 
