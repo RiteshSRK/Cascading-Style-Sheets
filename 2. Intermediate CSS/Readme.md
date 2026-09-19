@@ -148,6 +148,52 @@ A relatively positioned element:
 
 ### 3️⃣ `position: absolute`
 
+`absolute` element is positioned relative to its **containing block/nearest ancestor**, that establishes a positioning context
+
+And absolutely positioned element is **removed from the normal document flow.**
+
+HTML :
+```html
+<div class="parent">
+  <div class="child">
+    Child
+  </div>
+</div>
+```
+
+CSS:
+```css
+.parent {
+  width: 400px;
+  height: 300px;
+  background: lightblue;
+
+  position: relative;
+}
+
+.child {
+  width: 100px;
+  height: 100px;
+  background: red;
+
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+```
+
+Here:
+```
+Parent
+┌─────────────────────────────┐
+│                        ┌────┐
+│                        │Child
+│                        └────┘
+│                             │
+│                             │
+└─────────────────────────────┘
+```
+
 
 
 ---
