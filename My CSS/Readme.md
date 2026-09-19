@@ -315,3 +315,13 @@ h2{
 
 ---
 
+## 11. CSS Position Property
+
+| `position` Value | Meaning | How It Works | Common Use | Example |
+|---|---|---|---|---|
+| `static` | Default position | Element stays in the normal document flow | Default layout | `position: static;` |
+| `relative` | Relative to its normal position | Element remains in the document flow and can be moved using `top`, `right`, `bottom`, `left` | Creating a reference point for absolute children | `position: relative; top: 10px;` |
+| `absolute` | Positioned relative to the nearest positioned ancestor | Removed from normal document flow | Badges, dropdowns, overlays | `position: absolute; top: 0; right: 0;` |
+| `fixed` | Fixed relative to the viewport | Removed from normal flow and stays in the same position while scrolling | Fixed navbar, floating button | `position: fixed; bottom: 20px; right: 20px;` |
+| `sticky` | Combination of relative and fixed behavior | Stays in normal flow until a specified scroll position is reached | Sticky navbar, headings | `position: sticky; top: 0;` |
+
