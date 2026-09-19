@@ -325,3 +325,46 @@ h2{
 | `fixed` | Fixed relative to the viewport | Removed from normal flow and stays in the same position while scrolling | Fixed navbar, floating button | `position: fixed; bottom: 20px; right: 20px;` |
 | `sticky` | Combination of relative and fixed behavior | Stays in normal flow until a specified scroll position is reached | Sticky navbar, headings | `position: sticky; top: 0;` |
 
+## 12. CSS `box-shadow`
+
+| Property | Meaning | Syntax / Example | Main Use |
+|---|---|---|---|
+| `box-shadow` | Adds a shadow around an element's box | `box-shadow: 5px 5px 10px gray;` | Creating depth and visual effects |
+| **Offset X** | Moves the shadow horizontally | `5px` | Positive → right, Negative → left |
+| **Offset Y** | Moves the shadow vertically | `5px` | Positive → down, Negative → up |
+| **Blur Radius** | Controls how soft or sharp the shadow is | `10px` | Higher value → softer shadow |
+| **Spread Radius** | Controls how much the shadow expands or shrinks | `2px` | Positive → expands, Negative → shrinks |
+| **Color** | Defines the shadow color | `gray` / `rgba(0,0,0,0.3)` | Controls shadow appearance |
+| `inset` | Places the shadow inside the element | `box-shadow: inset 0 0 10px gray;` | Inner shadow |
+
+
+Syntax:
+```css
+box-shadow: offset-x offset-y blur-radius spread-radius color;
+```
+
+Example:
+```css
+box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3);
+```
+
+```css
+.card {
+  width: 300px;
+  padding: 20px;
+  background: white;
+
+  box-shadow: 5px 5px 10px gray;
+}
+```
+
+```
+X → Horizontal
+Y → Vertical
+Blur → Softness
+Spread → Size
+Color → Shadow color
+```
+
+---
+
