@@ -435,3 +435,64 @@ Yellowgreen → Yellow → Cyan.
 
 ---
 
+## 14. CSS `Flexbox`
+
+Flexbox (**Flexible Box Layout**) is a **one-dimensional layout system** used to arrange elements in a **row or column**.
+
+| Property | Meaning | Common Values | Example |
+|---|---|---|---|
+| `display` | Creates a flex container | `flex`, `inline-flex` | `display: flex;` |
+| `flex-direction` | Sets the main axis direction | `row`, `row-reverse`, `column`, `column-reverse` | `flex-direction: row;` |
+| `justify-content` | Aligns items along the **main axis** | `flex-start`, `center`, `flex-end`, `space-between`, `space-around`, `space-evenly` | `justify-content: center;` |
+| `align-items` | Aligns items along the **cross axis** | `stretch`, `flex-start`, `center`, `flex-end`, `baseline` | `align-items: center;` |
+| `flex-wrap` | Controls whether items wrap to a new line | `nowrap`, `wrap`, `wrap-reverse` | `flex-wrap: wrap;` |
+| `align-content` | Aligns multiple flex lines | `flex-start`, `center`, `space-between`, `space-around`, `stretch` | `align-content: center;` |
+| `gap` | Adds space between flex items | Length value | `gap: 20px;` |
+| `row-gap` | Sets space between rows | Length value | `row-gap: 10px;` |
+| `column-gap` | Sets space between columns | Length value | `column-gap: 20px;` |
+| `flex-grow` | Controls how much an item can grow | Number | `flex-grow: 1;` |
+| `flex-shrink` | Controls how much an item can shrink | Number | `flex-shrink: 0;` |
+| `flex-basis` | Sets the initial size of a flex item | `auto`, length | `flex-basis: 200px;` |
+| `flex` | Shorthand for grow, shrink, and basis | `flex-grow flex-shrink flex-basis` | `flex: 1;` |
+| `align-self` | Overrides `align-items` for one item | `auto`, `flex-start`, `center`, `flex-end` | `align-self: center;` |
+| `order` | Changes the visual order of an item | Number | `order: 2;` |
+
+### Flexbox Direction
+
+| `flex-direction` | Axis | Direction | Description |
+|---|---|---|---|
+| `row` | Main axis | Left → Right | Flex items are placed horizontally from left to right |
+| `row-reverse` | Main axis | Right → Left | Flex items are placed horizontally from right to left |
+| `column` | Main axis | Top → Bottom | Flex items are placed vertically from top to bottom |
+| `column-reverse` | Main axis | Bottom → Top | Flex items are placed vertically from bottom to top |
+
+### Flexbox Axes
+
+| Axis | Controlled By | Meaning |
+|---|---|---|
+| **Main Axis** | `justify-content` | Primary direction of flex items |
+| **Cross Axis** | `align-items` | Perpendicular direction to the main axis |
+
+<br>
+
+```html
+<div class="container">
+  <div>Box 1</div>
+  <div>Box 2</div>
+  <div>Box 3</div>
+</div>
+```
+
+```css
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+```
+
+### Interview definition:
+
+Flexbox is a one-dimensional CSS layout system used to arrange and align elements along a main axis and a cross axis, making responsive layouts easier to create.
+
