@@ -667,3 +667,65 @@ row-gap: 20px;
 column-gap: 30px;
 ```
 
+---
+
+### 6. `grid-column`
+It controls how many columns a grid item occupies.
+
+```css
+.item {
+  grid-column: 1 / 3;
+}
+```
+
+The item starts at column line `1` and ends at line `3`.
+
+```
+┌───────────────────────┐
+│        Item 1         │
+│   Column 1 → 3        │
+└───────────────────────┘
+
+┌────────┐ ┌────────┐
+│ Item 2 │ │ Item 3 │
+└────────┘ └────────┘
+```
+
+---
+
+### 7. `grid-row`
+
+It controls how many rows a grid item occupies.
+
+```css
+.item {
+  grid-row: 1 / 3;
+}
+```
+
+```
+┌────────┐
+│        │
+│ Item 1 │
+│        │
+│        │
+└────────┘
+```
+
+The item spans from row line `1` to row line `3`.
+
+---
+
+### 8. `grid-template-areas`
+This allows you to create a layout using named areas.
+
+```css
+.container {
+  display: grid;
+
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+}
+```
