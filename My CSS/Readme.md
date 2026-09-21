@@ -833,3 +833,26 @@ Example:
 ```
 
 This centers items both horizontally and vertically.
+
+---
+
+### 12. `justify-content`
+Controls the position of the entire grid along the horizontal axis when there is extra space.
+
+```css
+.container {
+  justify-content: center;
+}
+```
+
+```
+start
+center
+end
+space-between
+space-around
+space-evenly
+```
+
+---
+
