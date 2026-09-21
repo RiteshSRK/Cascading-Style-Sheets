@@ -864,3 +864,36 @@ Controls the position of the entire grid along the vertical axis when there is e
   align-content: center;
 }
 ```
+
+<br>
+
+---
+
+### 14. `Grid` vs `Flexbox`
+
+| Flexbox | Grid |
+|---|---|
+| Primarily **1-dimensional** | **2-dimensional** |
+| Works mainly with a row **or** column | Works with rows **and** columns |
+| Content-focused layout | Layout-focused system |
+| Excellent for navbar, alignment, components | Excellent for page layouts, card grids |
+| Main axis + cross axis | Rows + columns |
+
+<br>
+Easy way to remember
+
+```
+Flexbox
+───────────────
+→ → → → →
+One direction
+
+
+Grid
+───────────────
+→ → →
+→ → →
+→ → →
+Rows + Columns
+```
+
