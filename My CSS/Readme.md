@@ -729,3 +729,107 @@ This allows you to create a layout using named areas.
     "footer footer";
 }
 ```
+
+Visual structure:
+
+```
+┌───────────────┐
+│    Header     │
+├───────┬───────┤
+│Sidebar│ Main  │
+├───────┴───────┤
+│     Footer     │
+└───────────────┘
+```
+
+Then assign areas:
+
+```css
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
+```
+
+This is very useful for complete webpage layouts.
+
+---
+
+### 9. justify-items
+Controls the horizontal alignment of items inside their grid cells.
+
+```css
+.container {
+  justify-items: center;
+}
+```
+
+Common values:
+
+```
+start
+center
+end
+stretch
+```
+
+Example:
+
+```css
+justify-items: center;
+```
+
+```
+┌──────────────┐
+│              │
+│     Item     │
+│              │
+└──────────────┘
+       ↑
+    centered
+```
+
+### 10. `align-items`
+Controls the vertical alignment of items inside their grid cells.
+
+```css
+.container {
+  align-items: center;
+}
+```
+
+```
+start
+center
+end
+stretch
+```
+
+### 11. `place-items`
+Shorthand for:
+
+```css
+align-items
+justify-items
+```
+
+Example:
+
+```css
+.container {
+  place-items: center;
+}
+```
+
+This centers items both horizontally and vertically.
